@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODAL CLASSS IN HTML</title>
+    <style>
+        div#modal-container{
+            position: fixed;
+            top:0;
+            left:100;
+            width:100vw;
+            height:100vh;
+            background-color: rgba(0,0,0,0.1);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div.content{
+            background-color: #fff;
+            padding:20px;
+            border-radius: 20px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+            width:80%;
+            max-width: 400px;
+        }
+        div.header{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom:1px solid #ddd;
+            padding-bottom:10px;
+        }
+        span.close-modal{
+            cursor: pointer;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        div.modal-body{
+            padding:20px;
+        }
+        div.modal-footer{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+        div.modal-footer > button.btn-cancel{
+            background-color: #ccc;
+            color:#666;
+            border:none;
+            padding:10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        div.modal-footer > button.btn-ok{
+            background-color: #337ab7;
+            color:#fff;
+            border:none;
+            padding:10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="modal-container">
+        <div class="content">
+            <div class="header"> 
+                <h2>QuizMaster Result</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Congratulations, You Score 20%</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-cancel">Cancel</button>
+                <button class="btn-ok">Logout</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
