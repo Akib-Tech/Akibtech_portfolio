@@ -1,0 +1,442 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family:sans-serif;
+}
+body{
+    overflow:auto;
+}
+header{
+    display:flex;
+    flex-direction:row;
+    padding:10px 20px;
+    font-size: 18px;
+    background-color:rgb(37, 37, 37);
+  
+}
+header > nav {
+    flex-grow: 2;
+    animation: showname 1s ease-in-out; ;
+    
+}
+header > div {
+    flex-grow: 1;
+    color:greenyellow;
+    font-size:22px;
+    font-family: sans-serif;
+    font-weight: 900;
+    animation: showname 0.7s ease-in-out;
+}
+
+header > div:hover {
+    color:white;
+    cursor: pointer;
+    transition:1s;
+}
+
+nav > ul{
+    display:flex;
+    justify-content:flex-end;
+    color:white;
+    font-family: sans-serif;
+    padding-top:5px;
+}
+nav > ul li{
+    list-style-type:none;
+    padding:0 15px
+}
+nav > ul li#cancel-bar{
+    display:none;
+}
+nav > ul li.nav-link > a{
+    text-decoration: none;
+    padding-top:10px;
+    color:white;
+}
+nav > ul li.nav-link > a:hover{
+    color:greenyellow;
+    cursor: pointer;
+    transition: 1s;
+}
+nav > ul li#contact{
+    padding:5px 25px;
+    border:2px solid greenyellow;
+    border-radius: 15px;
+    color:white;
+}
+nav > ul li#contact > a{
+    text-decoration: none;
+    color:white;
+}
+nav > ul li#contact:hover{
+    border:2px solid rgb(37, 37, 37);
+    border-radius: 15px;
+    background-color: greenyellow;
+    color:black;
+    cursor: pointer;
+}
+nav > ul li#contact:hover a{
+ 
+    color:black;
+}
+
+section{
+    display:flex;
+    flex-direction:row;
+    padding:2% 15%;
+    background-color: rgb(37, 37, 37);
+}
+section > div#description{
+    flex-grow:2;
+    color:palegoldenrod;
+    font-size: 22px;
+}
+section > div#description :first-child{
+color:  greenyellow;
+}
+section > div#description > h1{
+    font-size:4em;
+    color:white;
+    padding: 20px 1%;
+    animation: slideRight 0.9s;
+    }
+section > div#description > h1:hover{
+    font-family: monospace;
+    transition: 2s;
+}
+section > div#description :nth-child(3){
+        color:white;
+        margin:3% 0;
+        }
+section > div#description :nth-child(5){
+color:greenyellow;
+}
+section > div#description p{
+    margin-top:10%
+}       
+section > div#description :last-child a{
+text-decoration: none;
+border:1px solid greenyellow;
+padding:10px 20px;
+border-radius: 10px;
+background-color: greenyellow;
+color:black;
+}
+section > div#description :last-child :hover{
+    background-color: rgb(37, 37, 37);
+    color:white;
+    border-color: white;
+    transition: 1s;
+}
+section > div#profile-pic{
+    flex-grow:1;
+    
+    animation: scaleIn 0.8s ease-in-out;
+}
+section > div#profile-pic img{
+    width:300px;
+    height:300px;
+    border:5px solid greenyellow;
+    border-radius: 150px;
+    transform:rotate(324deg);
+
+}
+section > div#profile-pic img:hover{
+    border: 1px dashed rgb(37, 37, 37);
+    transition:3s ease-in-out;
+    
+}
+section#my-profile{
+    background-color: rgb(43, 43, 43);
+    font-size: 22px;
+}
+div#about-me{
+    min-width:45%;
+    flex-grow: 1;
+    animation: slideRight 0.8s;
+}
+div#bio{
+    flex-grow: 1;
+    color:white;
+    font-size: 15px;
+}
+div#about-me :first-child{
+color:greenyellow;
+}
+div#about-me :nth-child(2){
+    color:white;
+    margin:6px 0;
+}
+div.passport-area{
+    width:180px;
+    height:150px;
+    margin-top:4%;
+    padding:0 0px 0px 5px;
+    background-color: greenyellow;
+    position:relative;
+}
+div.passport-area > img{
+    width:150px;
+    height:150px;
+    background-color:greenyellow;
+}
+div.passport-area > p{
+    width:80px;
+    height:80px;
+    padding:0px;
+    position:absolute;
+    background-color: rgb(43,43,43);
+    top:-22px;
+    left:180px;
+    z-index: 3;
+    transform:rotate(340deg);
+}
+div#personal-info{
+    animation:slideUp 0.8s;
+}
+div#bio > p.bio-desc{
+    margin:15px 0px;
+    animation:slideLeft 0.8s;
+}
+div.bio-container{
+    display:flex;
+    flex-direction: row;
+}
+div.bio-data{
+    flex-grow:1;
+    margin:7px 0;
+    max-width: 45%;
+}
+div.bio-data > h5{
+    font-size:16px;;
+}
+div.cv-download{
+    margin-top:10px;
+}
+div.cv-download > a{
+    text-decoration: none;
+    border:1px solid greenyellow;
+    padding:10px 20px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    color:black;
+    font-weight: 600;
+    font-family: sans-serif;
+} 
+div.cv-download > a:hover{
+    background-color:rgb(19, 18, 18);
+    color:white;
+    border-color: white;
+    transition: 1s;
+}
+section#work-rate{
+    display:flex;
+    flex-direction:row;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+section#work-rate > div.project{
+    flex-grow:1;
+    text-align: center;
+    color:white;
+}
+section#work-rate > div.project >h3 {
+    font-size: 3em;
+}
+section#work-rate > div.project > h3 > sup{
+    font-size: 30px;
+}
+section.services-container{
+    background-color: rgb(43,43,43);
+    justify-content: space-between;
+}
+
+
+section.services-container > div.service-desc{
+    flex-grow: 1;
+    max-width: 45%;
+    color:white;
+    
+}
+
+section.services-container > div.service-list{
+    padding:10px 0px 10px 10px;
+    color:white;
+    max-width: 45%;
+    background-color:rgb(37,37,37);
+    border-radius: 10px;
+    box-shadow: 4px rgb(43, 43, 43);
+}
+
+
+section.services-container >  div.each-service{
+    display:flex;
+}
+
+section.services-container >  div.each-service > div.icon{
+    flex-grow: 1;
+    min-width : 10%;
+}
+
+section.services-container > div.each-service > div.service-info{
+    flex-grow: 1;
+    max-width : 85%;
+}
+  a.project-check {
+    text-decoration: none;
+    color:greenyellow;
+}
+section.services-container > div.service-list-left{
+    margin-top: -20%;
+    margin-bottom: 2%;
+}
+section#contact-me{
+    color:white;
+    display:inline-block;
+}
+section#contact-me > h2{
+    text-align: center;
+}
+section#contact-me > p {
+    text-align: center;
+}
+section#contact-me > p > a{
+    text-decoration: none;
+    border:1px solid greenyellow;
+    padding:10px 20px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    color:black;
+    font-weight: 600;
+    font-family: sans-serif;
+} 
+section#contact-me > p > a:hover{
+    background-color:rgb(43, 43, 43);
+    color:white;
+    border-color: white;
+    transition: 1s;
+}
+
+@keyframes scaleIn{
+0%{
+    transform: scale(0);
+ 
+}
+
+100%{
+    transform: scale(1);
+}
+}
+
+@keyframes showname {
+0%{
+   transform: scale(0.5);
+}    
+100%{
+    visibility: scale(1);
+}
+}
+
+@keyframes slideLeft {
+    0%{
+        transform: translateX(150px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-150px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideUp{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media (max-width:768px) {
+ 
+
+    section{
+        flex-direction: column;
+        padding:auto;
+        position: static;
+        z-index: 1;
+    }
+
+    section > div#description > h1{
+        font-size: 3em;
+    }
+    div#about-me{
+        width:100%;
+    }
+    div.bio-data{
+        flex-grow:1;
+        margin:7px 0;
+        max-width: 48%;
+    }
+    section#my-profile,section#work-rate{
+        padding-left:2%;
+        padding-right:2%;
+    }
+    section#work-rate > div.project{
+        text-align: left;
+    }
+    div.cv-download{
+        text-align:center;
+    }
+    section.services-container > div.service-list,section.services-container > div.service-desc{
+        max-width:100%;
+    }
+
+    header > nav{
+        position: static;
+    }
+    header > nav > div#navbar {
+       position: absolute;
+       top:0px;
+       right:10px;
+       padding:15px 0;
+    }
+    header > nav > div > span{
+        display:block;
+        width:40px;
+        margin-bottom:5px;
+        height:5px;
+        background-color: greenyellow;
+    }
+   
+
+    nav > ul {
+        text-align: center;
+        background-color: rgb(37, 37, 37);
+        display:none;
+        flex-direction: column;
+        position:absolute;
+        top:0;
+        right:0px;
+        z-index:2;
+        padding:10px;
+        height:40vh;
+        width:50vw;
+    }
+    nav > ul > li {
+        margin-bottom:10%;
+        }
+    nav > ul > li#cancel-bar{
+    display: inline-flex;
+     color:greenyellow;  
+     font-size: 32px;
+    }
+   
+}
